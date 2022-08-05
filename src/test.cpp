@@ -18,7 +18,8 @@ int main(){
 	factorial.factorial(sayi);
 	
 	time_t tarih1 = time(NULL);
-   cout <<endl<< ctime(&tarih1);
+    cout <<endl<< ctime(&tarih1);
+   
 	
 	cout<<endl;
 	return 0;

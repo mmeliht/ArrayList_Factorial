@@ -32,14 +32,7 @@
 			length++;					
 		}
 
-		ostream& operator<<(ostream& screen,ArrayList& right){
-			screen<<endl;
-			for(int i=0;i<right.length;i++){
-				screen<<right.items[i];
-				if(i+1!=right.length)screen<<" || ";
-			}
-			return screen;
-		}
+		
 		ArrayList::~ArrayList()
 		{
 			if(items != NULL) delete [] items;

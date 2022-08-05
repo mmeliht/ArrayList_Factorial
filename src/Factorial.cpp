@@ -1,6 +1,8 @@
 #include "Factorial.hpp"
 #include "ArrayList.hpp"
-
+#include <fstream>
+	
+	
 	int Factorial::multiply(int x, ArrayList *array, int numberLenght)
 	{
 		int elde=0;
@@ -42,14 +44,16 @@
 			basamakToplam=0;		
 		}
 		
-		cout << "Factorial of given number is \n";
+		cout << "Sonuc Dosyaya Yazildi.";
 		
+		ofstream MyFile("Sonuc.txt");
 		for (int i=size-1; i>=0; i--){
-			cout << array->elementAt(i);
+			MyFile << array->elementAt(i);
 		}
 		
 		delete array;
 	}
+	
 	
 
 
