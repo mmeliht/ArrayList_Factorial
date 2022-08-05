@@ -1,3 +1,12 @@
+/**
+* @ B191210004
+* @ Konsoldan girilen sayının ödevde istenen şekilde faktöriyelinin hesaplanması ve dosyaya yazılması.
+* @ 1.Öğretim A grubu
+* @ 1.Ödev
+* @ 28.07.2022
+* @ Mustafa Melih TÜFEKCİOĞLU
+*/
+
 #ifndef ARRAYLIST_HPP
 #define ARRAYLIST_HPP
 
@@ -17,8 +26,6 @@ class ArrayList{
 		int &elementAt(int);
 		
 		void insert(int,const int& );
-			
-		friend ostream& operator<<(ostream& ,ArrayList& );
 			
 		~ArrayList();
 		
